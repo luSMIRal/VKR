@@ -1,0 +1,192 @@
+.head_nav {
+
+	background: #4A4BBA;
+}
+
+#nav li.selected {
+	background: #e96037;
+}
+
+.title_wr {
+	/* background-image: url(../img/back_int.png); картинка инфо */
+	box-shadow: 0px -10px 9px 10px rgba(0,0,0,0.5);
+}
+
+.head_title p {
+	font-family: MyriadPro-Cond;
+	color: #159884;
+	}
+	
+	
+/*	
+	Тело
+	########################
+	3 колонки верхние 
+	########################
+*/
+
+
+.adobe {
+	width:100%;
+	height: 100%;
+	padding-bottom:40px;
+	display: table-cell;
+}
+
+.adobe [class^="a_"] {
+	display:table-row;
+	width: 300px;
+	height: 486px;
+	float: right;
+	position:relative;
+	
+}
+
+.a_ill {
+	margin:0 40px;
+}
+
+
+.up {
+	height:174px;
+	width:300px;
+	display: table-caption;
+	font-family: MyriadPro-Cond;
+	position:relative;
+}
+
+.up_text {
+	position:absolute; 
+	width: inherit;
+	text-align: center; vertical-align: bottom;
+	font-size : 36px;
+	color: #fff;
+
+	bottom:0;
+}
+
+.a_ps .up {
+background: #4A4BBA;
+background-image: url(../img/ps.png);
+background-position: 50% 30%;
+background-repeat: no-repeat;
+}
+
+.a_ill .up {
+background: #4A4BBA;
+background-image: url(../img/ai.png);
+background-position: 50% 30%;
+background-repeat: no-repeat;
+}
+
+.a_inD .up {
+background: #3c3c8b;
+background-image: url(../img/id.png);
+background-position: 50% 30%;
+background-repeat: no-repeat;
+}
+
+
+
+.down {
+	
+	height:100%;
+	display: table-cell;
+	width: auto;
+	border-style: none solid solid; 
+	/* border-color: rgb(34, 34, 34); не исп */
+	border-width: 1px; 
+	border-radius: 3px;
+	padding: 4px;
+}
+
+.down_text {
+	height: 140;
+	overflow: hidden;
+	width: inherit;
+	text-align: center; vertical-align: bottom;
+	font-family: MyriadPro-Light;
+	text-align:justify;
+	padding: 12px;
+	font-size : 14px;
+	color: #3c3c8b;
+	bottom:0;
+	
+}
+.down_butt {
+
+	width: inherit;
+	text-align: center; vertical-align: bottom;
+	font-size : 36px;
+
+	bottom:0;
+	font-family: MyriadPro-Cond;
+	font-size : 18px;
+	padding: 4 0;
+}
+
+.a_ps .down a {
+color: #3c3c8b;
+}
+
+.a_ill .down a {
+color: #3c3c8b;
+
+}
+
+.a_inD .down a {
+color: #3c3c8b;
+
+}
+
+.a_ps .down {
+border-color: #3c3c8b;
+}
+
+.a_ill .down {
+border-color: #3c3c8b;
+}
+
+.a_inD .down {
+border-color: #3c3c8b;
+}
+
+.down p{
+padding:0;
+margin:4;
+}
+
+
+.les_cont {
+	margin:0 auto;
+	width: 900;
+	height:448px;
+	display: table;
+}
+
+.less_1, .less_2 {
+
+	width: 245;
+	height: 305;
+	text-align: center; vertical-align: middle;
+
+		display: table-cell;
+}
+
+.less_link {
+	margin-top:10px;
+	font-family: MyriadPro-Cond;
+
+	color: #159884;
+}
+
+.less_link a {
+	font-family: MyriadPro-Cond;
+	font-size : 20px;
+	color: #159884;
+}
+.footer_wr{
+/* border: 1px solid #000;не исп*/
+	background: #3c3c8b;
+	z-index:-1;
+}
