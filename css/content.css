@@ -6,7 +6,16 @@ body {
 	font-size: 14px;
 	font-family: MyriadPro-Regular;
 }
-
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
 
 @font-face {
 	font-family: MyriadPro-Regular; 
@@ -54,7 +63,7 @@ body {
 
 .head_wr {
 	width: auto;
-	height: 288px;
+	height: 80px;
 	padding-top: 0px;
 	position: relative;
 	margin-left: auto;
@@ -68,6 +77,7 @@ body {
 	padding-top: 0px;
 	box-shadow: 0px -10px 9px 15px rgba(0,0,0,0.6);
 	z-index:-1;
+	border-radius: 5px;
 
 }
 #nav {
@@ -84,6 +94,7 @@ body {
 	display: table-cell;
 	text-align: center; vertical-align: middle;
 	min-width: 100px; 
+	margin: 0 10px 0;
 	color: #fff;
 	letter-spacing: 0.25px;
 	font-size: 19px;
@@ -98,7 +109,11 @@ body {
 }
 
 #nav li:hover {
-	text-shadow: 0px 0px 5px black;
+	/* text-shadow: 0px 0px 5px black; */
+	color: #fff; /* Цвет текста */
+	border-radius: 5px;
+	background-color: #5e60b9 !important;  /* Цвет фона */
+	box-shadow: 0 4px 20px 0px #22244e, 0 7px 12px -5px #717294;  /* Цвет фона */
 }
 #nav li.selected {
 
@@ -109,24 +124,24 @@ body {
 
 #toTop {
 width:100px;
-border:1px solid #ccc;
-background:#3c3c8b;
+border:1px solid #4A4BBA;
+background:#161739;
 text-align:center;
-padding:5px;
+padding:10px;
 position:fixed;
 bottom:10px; 
 right:10px;
 cursor:pointer;
 display:none;
-color:#333;
+color:rgb(255, 255, 255);
 font-family:verdana;
-font-size:11px;
+font-size:14px;
 }
 
 .title_wr {
 	position: relative;
 	width:100%;
-	height: 210px;
+	height: 100px;
 	margin-left: auto;
 	margin-right: auto;	
 	background-position: center; 
@@ -135,8 +150,8 @@ font-size:11px;
 }
 
 .head_title {
-	width: 980px;
-	height: 218px;
+	width: 9px;
+	height: 2px;
 	display: table;
 	
 	padding-top: 5px;
@@ -188,9 +203,8 @@ font-size:11px;
 
 .content {
 /* border: 1px solid #000; */
-	width:980px;
+	width: 980px;
 	margin: 30px auto;
-
 	max-width:980px ;
 	
 }
@@ -199,8 +213,8 @@ font-size:11px;
 /* border: 1px solid #000; */
 
 	height: 40px;
-	background: #3c3c8b;/*С„РёРѕР»РµС‚РѕРІС‹Р№*/
-			background: #4A4BBA;/*С„РёРѕР»РµС‚РѕРІС‹Р№*/
+	background: #4A4BBA;
+	background: #4A4BBA;
 }
 
 
@@ -208,10 +222,19 @@ font-size:11px;
 	font-size:19px;
 	font-family: MyriadPro-Regular;
 	text-decoration: none;
-	color: #3c3c8b;/*С„РёРѕР»РµС‚РѕРІС‹Р№*/	
-
-		display: block;
+	color: #3c3c8b;	
+	display: block;
 }
+
+#side_menu a:hover {
+	color: #3c3c8b;
+	font-weight:bold ;
+	background: #ffffff;
+	/* padding: 1px 0; */
+	border-radius: 5px;
+	/* box-shadow: inset 2px 15px 9px -7px #22244e; */
+
+   }
 
 #side_menu  {
 	font-size:19px;
@@ -241,16 +264,19 @@ font-size:11px;
 }
 
 #side_menu li {
+	
 	text-decoration: none;
 	margin: 0;
 	padding: 10 0 0 10 ;	
 	list-style:none;
-	border-bottom: 1px solid #ffb52c;/*С„РёРѕР»РµС‚РѕРІС‹Р№*/
+	/* border-bottom: 1px solid #171fc2; */
 		width: inherit;
 }
 
+
 #side_menu .current a{
 	font-family: MyriadPro-Bold;
+
 	
 }
 
@@ -315,7 +341,7 @@ font-size:11px;
  top:-30px;
  width: 22px;
  height: 22px;
- background: transparent url(../img/qwer.jpeg) no-repeat top left;
+ background: no-repeat top left;
  left:20px;
  opacity: 0.4;
 }
